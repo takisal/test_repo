@@ -2,4 +2,4 @@
 test repo
 hello
 
-do p 
+do p 2
