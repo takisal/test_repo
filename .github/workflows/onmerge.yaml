@@ -1,6 +1,6 @@
 name: Increment Tag
 on:
-  push:
+  pull_request:
     branches:
       - main
   
