@@ -1,0 +1,16 @@
+name: Increment Tag
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+        REPO_OWNER: silverkoi
+        WITH_V: true
