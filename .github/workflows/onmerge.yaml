@@ -16,3 +16,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
         REPO_OWNER: silverkoi
         WITH_V: true
+        DEFAULT_BUMP: patch
